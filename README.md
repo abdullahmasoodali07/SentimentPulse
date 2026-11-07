@@ -262,3 +262,13 @@ generated `public/data/*.json`. Re-run `python backend/main.py` locally and comm
 4. Switch to Monthly: May is flagged there too, independently.
 5. Live analyzer: type the specification's example (score 0), then edit the lexicon and show the result change.
 6. Explain the limits honestly: try "Not good at all." (+1) and explain why a lexicon cannot handle negation.
+
+## Team
+
+Developed by:
+
+- **Abdullah Masood Ali** — [GitHub Profile](https://github.com/abdullahmasoodali07)
+- **Syed Ameen Uddin** — [GitHub Profile](https://github.com/sameenuddin7)
+- **Mohammed Fareesuddin** — [GitHub Profile](https://github.com/mohdfareesuddin2007-cell)
+
+All three members contributed to the planning, development and completion of SentimentPulse.
