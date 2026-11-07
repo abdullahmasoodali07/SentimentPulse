@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+*.log
+# data/custom_lexicon.json is your own export; commit it only if you want it applied for everyone.

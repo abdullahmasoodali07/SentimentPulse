@@ -1,0 +1,2450 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "delivery",
+      "label": "Delivery & shipping"
+    },
+    {
+      "id": "quality",
+      "label": "Product quality & damage"
+    },
+    {
+      "id": "support",
+      "label": "Customer support"
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing & payments"
+    },
+    {
+      "id": "website",
+      "label": "Website / app performance"
+    },
+    {
+      "id": "returns",
+      "label": "Returns & refunds"
+    },
+    {
+      "id": "other",
+      "label": "Other complaints"
+    }
+  ],
+  "overall": {
+    "negative_reviews": 196,
+    "evidence": "sufficient",
+    "categories": [
+      {
+        "id": "quality",
+        "count": 63,
+        "pct": 32.1,
+        "example_review_ids": [
+          208,
+          228,
+          498
+        ]
+      },
+      {
+        "id": "delivery",
+        "count": 62,
+        "pct": 31.6,
+        "example_review_ids": [
+          152,
+          303,
+          337
+        ]
+      },
+      {
+        "id": "support",
+        "count": 58,
+        "pct": 29.6,
+        "example_review_ids": [
+          152,
+          303,
+          374
+        ]
+      },
+      {
+        "id": "website",
+        "count": 43,
+        "pct": 21.9,
+        "example_review_ids": [
+          228,
+          337,
+          453
+        ]
+      },
+      {
+        "id": "returns",
+        "count": 26,
+        "pct": 13.3,
+        "example_review_ids": [
+          820,
+          412,
+          415
+        ]
+      },
+      {
+        "id": "pricing",
+        "count": 18,
+        "pct": 9.2,
+        "example_review_ids": [
+          208,
+          337,
+          498
+        ]
+      },
+      {
+        "id": "other",
+        "count": 11,
+        "pct": 5.6,
+        "example_review_ids": [
+          734,
+          862,
+          5
+        ]
+      }
+    ],
+    "explanation": "Negative sentiment in the whole dataset was primarily associated with product quality/damage, delivery/shipping and customer support. Product quality/damage complaints appeared in 32% of negative reviews (63 of 196); delivery/shipping complaints in 32% (62 of 196); customer support complaints in 30% (58 of 196). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+  },
+  "week": {
+    "2026-W01": {
+      "negative_reviews": 1,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 100.0,
+          "example_review_ids": [
+            5
+          ]
+        }
+      ],
+      "explanation": "Only 1 negative review was recorded in the week of 29 Dec 2025, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W02": {
+      "negative_reviews": 0,
+      "evidence": "insufficient",
+      "categories": [],
+      "explanation": "There were no negative reviews in the week of 5 Jan 2026, so there are no complaints to analyse."
+    },
+    "2026-W03": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 3,
+          "pct": 75.0,
+          "example_review_ids": [
+            28,
+            32,
+            36
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            28
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            39
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            39
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 12 Jan 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W04": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 75.0,
+          "example_review_ids": [
+            60,
+            51,
+            49
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            60
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            55
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            55
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 19 Jan 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W05": {
+      "negative_reviews": 5,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 60.0,
+          "example_review_ids": [
+            72,
+            74,
+            80
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 40.0,
+          "example_review_ids": [
+            72,
+            79
+          ]
+        },
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 40.0,
+          "example_review_ids": [
+            79,
+            77
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            74
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 26 Jan 2026 was primarily associated with delivery/shipping, product quality/damage and customer support. Delivery/shipping complaints appeared in 60% of negative reviews (3 of 5); product quality/damage complaints in 40% (2 of 5); customer support complaints in 40% (2 of 5). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W06": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 66.7,
+          "example_review_ids": [
+            87,
+            99
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            99
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            88
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            88
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 2 Feb 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W07": {
+      "negative_reviews": 6,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 4,
+          "pct": 66.7,
+          "example_review_ids": [
+            120,
+            113,
+            115
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 2,
+          "pct": 33.3,
+          "example_review_ids": [
+            120,
+            115
+          ]
+        },
+        {
+          "id": "website",
+          "count": 2,
+          "pct": 33.3,
+          "example_review_ids": [
+            126,
+            113
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            126
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            123
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 9 Feb 2026 was primarily associated with product quality/damage, delivery/shipping and website/app performance. Product quality/damage complaints appeared in 67% of negative reviews (4 of 6); delivery/shipping complaints in 33% (2 of 6); website/app performance complaints in 33% (2 of 6). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W08": {
+      "negative_reviews": 7,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 42.9,
+          "example_review_ids": [
+            152,
+            139,
+            142
+          ]
+        },
+        {
+          "id": "support",
+          "count": 3,
+          "pct": 42.9,
+          "example_review_ids": [
+            152,
+            139,
+            145
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 28.6,
+          "example_review_ids": [
+            151,
+            154
+          ]
+        },
+        {
+          "id": "website",
+          "count": 2,
+          "pct": 28.6,
+          "example_review_ids": [
+            151,
+            149
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 14.3,
+          "example_review_ids": [
+            149
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 16 Feb 2026 was primarily associated with delivery/shipping, customer support and product quality/damage. Delivery/shipping complaints appeared in 43% of negative reviews (3 of 7); customer support complaints in 43% (3 of 7); product quality/damage complaints in 29% (2 of 7). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W09": {
+      "negative_reviews": 6,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 3,
+          "pct": 50.0,
+          "example_review_ids": [
+            156,
+            164,
+            173
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 2,
+          "pct": 33.3,
+          "example_review_ids": [
+            160,
+            172
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            156
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            177
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            177
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            164
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 23 Feb 2026 was primarily associated with customer support and delivery/shipping. Customer support complaints appeared in 50% of negative reviews (3 of 6); delivery/shipping complaints in 33% (2 of 6). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W10": {
+      "negative_reviews": 2,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            190
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            193
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            190
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            193
+          ]
+        }
+      ],
+      "explanation": "Only 2 negative reviews were recorded in the week of 2 Mar 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W11": {
+      "negative_reviews": 2,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            208
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            222
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            208
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            222
+          ]
+        }
+      ],
+      "explanation": "Only 2 negative reviews were recorded in the week of 9 Mar 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W12": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 66.7,
+          "example_review_ids": [
+            228,
+            233
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            233
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            249
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            228
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 16 Mar 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W13": {
+      "negative_reviews": 6,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 33.3,
+          "example_review_ids": [
+            268,
+            256
+          ]
+        },
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 33.3,
+          "example_review_ids": [
+            268,
+            257
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 33.3,
+          "example_review_ids": [
+            262,
+            266
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            256
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            262
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            253
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 23 Mar 2026 was primarily associated with product quality/damage, customer support and returns/refunds. Product quality/damage complaints appeared in 33% of negative reviews (2 of 6); customer support complaints in 33% (2 of 6); returns/refunds complaints in 33% (2 of 6). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W14": {
+      "negative_reviews": 1,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 100.0,
+          "example_review_ids": [
+            278
+          ]
+        }
+      ],
+      "explanation": "Only 1 negative review was recorded in the week of 30 Mar 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W15": {
+      "negative_reviews": 1,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 100.0,
+          "example_review_ids": [
+            303
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 100.0,
+          "example_review_ids": [
+            303
+          ]
+        }
+      ],
+      "explanation": "Only 1 negative review was recorded in the week of 6 Apr 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W16": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 75.0,
+          "example_review_ids": [
+            327,
+            316,
+            329
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 2,
+          "pct": 50.0,
+          "example_review_ids": [
+            327,
+            315
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            316
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 13 Apr 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W17": {
+      "negative_reviews": 6,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 50.0,
+          "example_review_ids": [
+            338,
+            339,
+            348
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            337
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            344
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            337
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            337
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 16.7,
+          "example_review_ids": [
+            347
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 20 Apr 2026 was primarily associated with product quality/damage. Product quality/damage complaints appeared in 50% of negative reviews (3 of 6). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W18": {
+      "negative_reviews": 2,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            358
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            354
+          ]
+        }
+      ],
+      "explanation": "Only 2 negative reviews were recorded in the week of 27 Apr 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W19": {
+      "negative_reviews": 7,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 5,
+          "pct": 71.4,
+          "example_review_ids": [
+            374,
+            390,
+            387
+          ]
+        },
+        {
+          "id": "support",
+          "count": 5,
+          "pct": 71.4,
+          "example_review_ids": [
+            374,
+            390,
+            383
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 14.3,
+          "example_review_ids": [
+            371
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 4 May 2026 was primarily associated with delivery/shipping and customer support. Delivery/shipping complaints appeared in 71% of negative reviews (5 of 7); customer support complaints in 71% (5 of 7). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W20": {
+      "negative_reviews": 17,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 7,
+          "pct": 41.2,
+          "example_review_ids": [
+            392,
+            404,
+            412
+          ]
+        },
+        {
+          "id": "support",
+          "count": 5,
+          "pct": 29.4,
+          "example_review_ids": [
+            415,
+            418,
+            419
+          ]
+        },
+        {
+          "id": "website",
+          "count": 3,
+          "pct": 17.6,
+          "example_review_ids": [
+            399,
+            414,
+            402
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 11.8,
+          "example_review_ids": [
+            404,
+            411
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 11.8,
+          "example_review_ids": [
+            412,
+            415
+          ]
+        },
+        {
+          "id": "other",
+          "count": 2,
+          "pct": 11.8,
+          "example_review_ids": [
+            397,
+            407
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 5.9,
+          "example_review_ids": [
+            395
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 11 May 2026 was primarily associated with delivery/shipping, customer support and website/app performance. Delivery/shipping complaints appeared in 41% of negative reviews (7 of 17); customer support complaints in 29% (5 of 17); website/app performance complaints in 18% (3 of 17). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W21": {
+      "negative_reviews": 20,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 11,
+          "pct": 55.0,
+          "example_review_ids": [
+            427,
+            430,
+            431
+          ]
+        },
+        {
+          "id": "support",
+          "count": 4,
+          "pct": 20.0,
+          "example_review_ids": [
+            432,
+            436,
+            444
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 4,
+          "pct": 20.0,
+          "example_review_ids": [
+            434,
+            443,
+            423
+          ]
+        },
+        {
+          "id": "website",
+          "count": 3,
+          "pct": 15.0,
+          "example_review_ids": [
+            427,
+            421,
+            426
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 10.0,
+          "example_review_ids": [
+            420,
+            432
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 5.0,
+          "example_review_ids": [
+            420
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 18 May 2026 was primarily associated with delivery/shipping, customer support and returns/refunds. Delivery/shipping complaints appeared in 55% of negative reviews (11 of 20); customer support complaints in 20% (4 of 20); returns/refunds complaints in 20% (4 of 20). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W22": {
+      "negative_reviews": 11,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "website",
+          "count": 5,
+          "pct": 45.5,
+          "example_review_ids": [
+            453,
+            451,
+            447
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 27.3,
+          "example_review_ids": [
+            453,
+            451,
+            468
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 18.2,
+          "example_review_ids": [
+            450,
+            463
+          ]
+        },
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 18.2,
+          "example_review_ids": [
+            447,
+            470
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 9.1,
+          "example_review_ids": [
+            468
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 9.1,
+          "example_review_ids": [
+            455
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 9.1,
+          "example_review_ids": [
+            462
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 25 May 2026 was primarily associated with website/app performance, delivery/shipping and product quality/damage. Website/app performance complaints appeared in 46% of negative reviews (5 of 11); delivery/shipping complaints in 27% (3 of 11); product quality/damage complaints in 18% (2 of 11). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W23": {
+      "negative_reviews": 7,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 4,
+          "pct": 57.1,
+          "example_review_ids": [
+            477,
+            474,
+            484
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 42.9,
+          "example_review_ids": [
+            497,
+            486,
+            494
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 28.6,
+          "example_review_ids": [
+            477,
+            486
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 1 Jun 2026 was primarily associated with customer support, delivery/shipping and product quality/damage. Customer support complaints appeared in 57% of negative reviews (4 of 7); delivery/shipping complaints in 43% (3 of 7); product quality/damage complaints in 29% (2 of 7). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W24": {
+      "negative_reviews": 5,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 60.0,
+          "example_review_ids": [
+            498,
+            507,
+            514
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 2,
+          "pct": 40.0,
+          "example_review_ids": [
+            498,
+            504
+          ]
+        },
+        {
+          "id": "website",
+          "count": 2,
+          "pct": 40.0,
+          "example_review_ids": [
+            504,
+            507
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            514
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            512
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 8 Jun 2026 was primarily associated with product quality/damage, pricing/payments and website/app performance. Product quality/damage complaints appeared in 60% of negative reviews (3 of 5); pricing/payments complaints in 40% (2 of 5); website/app performance complaints in 40% (2 of 5). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W25": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 50.0,
+          "example_review_ids": [
+            539,
+            529
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            539
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            525
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            526
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 15 Jun 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W26": {
+      "negative_reviews": 8,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 75.0,
+          "example_review_ids": [
+            540,
+            546,
+            550
+          ]
+        },
+        {
+          "id": "website",
+          "count": 3,
+          "pct": 37.5,
+          "example_review_ids": [
+            553,
+            546,
+            552
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 12.5,
+          "example_review_ids": [
+            540
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 12.5,
+          "example_review_ids": [
+            553
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 12.5,
+          "example_review_ids": [
+            550
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 12.5,
+          "example_review_ids": [
+            547
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 22 Jun 2026 was primarily associated with product quality/damage and website/app performance. Product quality/damage complaints appeared in 75% of negative reviews (6 of 8); website/app performance complaints in 38% (3 of 8). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W28": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 66.7,
+          "example_review_ids": [
+            567,
+            562
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 66.7,
+          "example_review_ids": [
+            567,
+            576
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            576
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 6 Jul 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W29": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            582
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            582
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            577
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            593
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 13 Jul 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W30": {
+      "negative_reviews": 1,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 100.0,
+          "example_review_ids": [
+            596
+          ]
+        }
+      ],
+      "explanation": "Only 1 negative review was recorded in the week of 20 Jul 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W31": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 75.0,
+          "example_review_ids": [
+            618,
+            622,
+            629
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            618
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            630
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 27 Jul 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W32": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 100.0,
+          "example_review_ids": [
+            660,
+            649,
+            664
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            660
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            649
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 3 Aug 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W33": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 4,
+          "pct": 100.0,
+          "example_review_ids": [
+            666,
+            667,
+            668
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 75.0,
+          "example_review_ids": [
+            666,
+            668,
+            669
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 10 Aug 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W34": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 50.0,
+          "example_review_ids": [
+            682,
+            675
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            671
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            670
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            670
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 17 Aug 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W35": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 2,
+          "pct": 50.0,
+          "example_review_ids": [
+            690,
+            692
+          ]
+        },
+        {
+          "id": "website",
+          "count": 2,
+          "pct": 50.0,
+          "example_review_ids": [
+            692,
+            696
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            690
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            696
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            709
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 24 Aug 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W36": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "website",
+          "count": 2,
+          "pct": 50.0,
+          "example_review_ids": [
+            719,
+            721
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            729
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            729
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            734
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 31 Aug 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W37": {
+      "negative_reviews": 4,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 75.0,
+          "example_review_ids": [
+            749,
+            747,
+            754
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            747
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            743
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 25.0,
+          "example_review_ids": [
+            749
+          ]
+        }
+      ],
+      "explanation": "Only 4 negative reviews were recorded in the week of 7 Sep 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W38": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 2,
+          "pct": 66.7,
+          "example_review_ids": [
+            775,
+            770
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 2,
+          "pct": 66.7,
+          "example_review_ids": [
+            770,
+            777
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            775
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            777
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 14 Sep 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W39": {
+      "negative_reviews": 3,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            787
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            784
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 33.3,
+          "example_review_ids": [
+            794
+          ]
+        }
+      ],
+      "explanation": "Only 3 negative reviews were recorded in the week of 21 Sep 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W40": {
+      "negative_reviews": 2,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            814
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            812
+          ]
+        }
+      ],
+      "explanation": "Only 2 negative reviews were recorded in the week of 28 Sep 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W41": {
+      "negative_reviews": 2,
+      "evidence": "insufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            820
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            829
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 1,
+          "pct": 50.0,
+          "example_review_ids": [
+            820
+          ]
+        }
+      ],
+      "explanation": "Only 2 negative reviews were recorded in the week of 5 Oct 2026, fewer than the 5 needed for a reliable summary, so no explanation is offered. The individual reviews can still be inspected."
+    },
+    "2026-W42": {
+      "negative_reviews": 5,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 60.0,
+          "example_review_ids": [
+            849,
+            842,
+            858
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            846
+          ]
+        },
+        {
+          "id": "support",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            850
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            850
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 12 Oct 2026 was primarily associated with delivery/shipping. Delivery/shipping complaints appeared in 60% of negative reviews (3 of 5). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W43": {
+      "negative_reviews": 5,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 40.0,
+          "example_review_ids": [
+            866,
+            873
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            863
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            872
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 20.0,
+          "example_review_ids": [
+            862
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in the week of 19 Oct 2026 was primarily associated with customer support. Customer support complaints appeared in 40% of negative reviews (2 of 5). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-W44": {
+      "negative_reviews": 0,
+      "evidence": "insufficient",
+      "categories": [],
+      "explanation": "There were no negative reviews in the week of 26 Oct 2026, so there are no complaints to analyse."
+    }
+  },
+  "month": {
+    "2026-01": {
+      "negative_reviews": 14,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 42.9,
+          "example_review_ids": [
+            28,
+            60,
+            72
+          ]
+        },
+        {
+          "id": "support",
+          "count": 6,
+          "pct": 42.9,
+          "example_review_ids": [
+            28,
+            60,
+            79
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            72,
+            74,
+            80
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            39,
+            55,
+            74
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 7.1,
+          "example_review_ids": [
+            55
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 7.1,
+          "example_review_ids": [
+            39
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 7.1,
+          "example_review_ids": [
+            5
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in January 2026 was primarily associated with product quality/damage, customer support and delivery/shipping. Product quality/damage complaints appeared in 43% of negative reviews (6 of 14); customer support complaints in 43% (6 of 14); delivery/shipping complaints in 21% (3 of 14). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-02": {
+      "negative_reviews": 22,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 8,
+          "pct": 36.4,
+          "example_review_ids": [
+            152,
+            120,
+            139
+          ]
+        },
+        {
+          "id": "support",
+          "count": 8,
+          "pct": 36.4,
+          "example_review_ids": [
+            152,
+            88,
+            126
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 7,
+          "pct": 31.8,
+          "example_review_ids": [
+            120,
+            151,
+            156
+          ]
+        },
+        {
+          "id": "website",
+          "count": 6,
+          "pct": 27.3,
+          "example_review_ids": [
+            88,
+            126,
+            151
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 4,
+          "pct": 18.2,
+          "example_review_ids": [
+            87,
+            99,
+            164
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 2,
+          "pct": 9.1,
+          "example_review_ids": [
+            149,
+            177
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in February 2026 was primarily associated with delivery/shipping, customer support and product quality/damage. Delivery/shipping complaints appeared in 36% of negative reviews (8 of 22); customer support complaints in 36% (8 of 22); product quality/damage complaints in 32% (7 of 22). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-03": {
+      "negative_reviews": 13,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 46.2,
+          "example_review_ids": [
+            208,
+            228,
+            233
+          ]
+        },
+        {
+          "id": "support",
+          "count": 5,
+          "pct": 38.5,
+          "example_review_ids": [
+            268,
+            193,
+            222
+          ]
+        },
+        {
+          "id": "website",
+          "count": 4,
+          "pct": 30.8,
+          "example_review_ids": [
+            228,
+            193,
+            222
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 3,
+          "pct": 23.1,
+          "example_review_ids": [
+            208,
+            190,
+            262
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 2,
+          "pct": 15.4,
+          "example_review_ids": [
+            233,
+            256
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 15.4,
+          "example_review_ids": [
+            262,
+            266
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in March 2026 was primarily associated with product quality/damage, customer support and website/app performance. Product quality/damage complaints appeared in 46% of negative reviews (6 of 13); customer support complaints in 38% (5 of 13); website/app performance complaints in 31% (4 of 13). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-04": {
+      "negative_reviews": 14,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 42.9,
+          "example_review_ids": [
+            327,
+            316,
+            338
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            303,
+            337,
+            316
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            337,
+            327,
+            315
+          ]
+        },
+        {
+          "id": "website",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            337,
+            278,
+            358
+          ]
+        },
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 14.3,
+          "example_review_ids": [
+            303,
+            344
+          ]
+        },
+        {
+          "id": "other",
+          "count": 2,
+          "pct": 14.3,
+          "example_review_ids": [
+            347,
+            354
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in April 2026 was primarily associated with product quality/damage, delivery/shipping and pricing/payments. Product quality/damage complaints appeared in 43% of negative reviews (6 of 14); delivery/shipping complaints in 21% (3 of 14); pricing/payments complaints in 21% (3 of 14). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-05": {
+      "negative_reviews": 55,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 26,
+          "pct": 47.3,
+          "example_review_ids": [
+            374,
+            453,
+            390
+          ]
+        },
+        {
+          "id": "support",
+          "count": 16,
+          "pct": 29.1,
+          "example_review_ids": [
+            374,
+            390,
+            415
+          ]
+        },
+        {
+          "id": "website",
+          "count": 12,
+          "pct": 21.8,
+          "example_review_ids": [
+            453,
+            427,
+            451
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 7,
+          "pct": 12.7,
+          "example_review_ids": [
+            412,
+            415,
+            434
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 10.9,
+          "example_review_ids": [
+            404,
+            420,
+            432
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 3,
+          "pct": 5.5,
+          "example_review_ids": [
+            420,
+            468,
+            395
+          ]
+        },
+        {
+          "id": "other",
+          "count": 3,
+          "pct": 5.5,
+          "example_review_ids": [
+            397,
+            407,
+            462
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in May 2026 was primarily associated with delivery/shipping, customer support and website/app performance. Delivery/shipping complaints appeared in 47% of negative reviews (26 of 55); customer support complaints in 29% (16 of 55); website/app performance complaints in 22% (12 of 55). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-06": {
+      "negative_reviews": 24,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 12,
+          "pct": 50.0,
+          "example_review_ids": [
+            498,
+            477,
+            540
+          ]
+        },
+        {
+          "id": "support",
+          "count": 7,
+          "pct": 29.2,
+          "example_review_ids": [
+            553,
+            477,
+            539
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 6,
+          "pct": 25.0,
+          "example_review_ids": [
+            497,
+            540,
+            486
+          ]
+        },
+        {
+          "id": "website",
+          "count": 5,
+          "pct": 20.8,
+          "example_review_ids": [
+            553,
+            546,
+            504
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 3,
+          "pct": 12.5,
+          "example_review_ids": [
+            550,
+            512,
+            526
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 2,
+          "pct": 8.3,
+          "example_review_ids": [
+            498,
+            504
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 4.2,
+          "example_review_ids": [
+            547
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in June 2026 was primarily associated with product quality/damage, customer support and delivery/shipping. Product quality/damage complaints appeared in 50% of negative reviews (12 of 24); customer support complaints in 29% (7 of 24); delivery/shipping complaints in 25% (6 of 24). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-07": {
+      "negative_reviews": 11,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 54.5,
+          "example_review_ids": [
+            567,
+            582,
+            618
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 3,
+          "pct": 27.3,
+          "example_review_ids": [
+            567,
+            576,
+            577
+          ]
+        },
+        {
+          "id": "support",
+          "count": 2,
+          "pct": 18.2,
+          "example_review_ids": [
+            576,
+            582
+          ]
+        },
+        {
+          "id": "other",
+          "count": 2,
+          "pct": 18.2,
+          "example_review_ids": [
+            593,
+            630
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 9.1,
+          "example_review_ids": [
+            596
+          ]
+        },
+        {
+          "id": "website",
+          "count": 1,
+          "pct": 9.1,
+          "example_review_ids": [
+            618
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in July 2026 was primarily associated with product quality/damage, returns/refunds and customer support. Product quality/damage complaints appeared in 54% of negative reviews (6 of 11); returns/refunds complaints in 27% (3 of 11); customer support complaints in 18% (2 of 11). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-08": {
+      "negative_reviews": 15,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 6,
+          "pct": 40.0,
+          "example_review_ids": [
+            690,
+            666,
+            668
+          ]
+        },
+        {
+          "id": "support",
+          "count": 6,
+          "pct": 40.0,
+          "example_review_ids": [
+            666,
+            667,
+            668
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 5,
+          "pct": 33.3,
+          "example_review_ids": [
+            660,
+            690,
+            649
+          ]
+        },
+        {
+          "id": "website",
+          "count": 3,
+          "pct": 20.0,
+          "example_review_ids": [
+            649,
+            692,
+            696
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 2,
+          "pct": 13.3,
+          "example_review_ids": [
+            660,
+            696
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 13.3,
+          "example_review_ids": [
+            670,
+            709
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in August 2026 was primarily associated with delivery/shipping, customer support and product quality/damage. Delivery/shipping complaints appeared in 40% of negative reviews (6 of 15); customer support complaints in 40% (6 of 15); product quality/damage complaints in 33% (5 of 15). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-09": {
+      "negative_reviews": 14,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "quality",
+          "count": 6,
+          "pct": 42.9,
+          "example_review_ids": [
+            749,
+            747,
+            754
+          ]
+        },
+        {
+          "id": "website",
+          "count": 5,
+          "pct": 35.7,
+          "example_review_ids": [
+            749,
+            777,
+            719
+          ]
+        },
+        {
+          "id": "delivery",
+          "count": 4,
+          "pct": 28.6,
+          "example_review_ids": [
+            775,
+            747,
+            770
+          ]
+        },
+        {
+          "id": "support",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            775,
+            729,
+            743
+          ]
+        },
+        {
+          "id": "pricing",
+          "count": 1,
+          "pct": 7.1,
+          "example_review_ids": [
+            729
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 7.1,
+          "example_review_ids": [
+            734
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in September 2026 was primarily associated with product quality/damage, website/app performance and delivery/shipping. Product quality/damage complaints appeared in 43% of negative reviews (6 of 14); website/app performance complaints in 36% (5 of 14); delivery/shipping complaints in 29% (4 of 14). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    },
+    "2026-10": {
+      "negative_reviews": 14,
+      "evidence": "sufficient",
+      "categories": [
+        {
+          "id": "delivery",
+          "count": 4,
+          "pct": 28.6,
+          "example_review_ids": [
+            820,
+            849,
+            842
+          ]
+        },
+        {
+          "id": "quality",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            814,
+            846,
+            863
+          ]
+        },
+        {
+          "id": "support",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            850,
+            866,
+            873
+          ]
+        },
+        {
+          "id": "website",
+          "count": 3,
+          "pct": 21.4,
+          "example_review_ids": [
+            850,
+            829,
+            872
+          ]
+        },
+        {
+          "id": "returns",
+          "count": 2,
+          "pct": 14.3,
+          "example_review_ids": [
+            820,
+            812
+          ]
+        },
+        {
+          "id": "other",
+          "count": 1,
+          "pct": 7.1,
+          "example_review_ids": [
+            862
+          ]
+        }
+      ],
+      "explanation": "Negative sentiment in October 2026 was primarily associated with delivery/shipping, product quality/damage and customer support. Delivery/shipping complaints appeared in 29% of negative reviews (4 of 14); product quality/damage complaints in 21% (3 of 14); customer support complaints in 21% (3 of 14). One review can mention several categories, so percentages may add up to more than 100%. These are complaints reported by customers in their review text: the pattern shows association, not a verified technical cause."
+    }
+  }
+}

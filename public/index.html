@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SentimentPulse</title>
+  <meta name="description" content="SentimentPulse: customer sentiment analytics from a SQLite database, with negative-period detection and evidence-based complaint analysis. No AI model is used.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111a2e'/%3E%3Cpath d='M4 17h6l3-8 5 15 3-7h7' fill='none' stroke='%2334d399' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#overview" aria-label="SentimentPulse home">
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--panel-2)"/><path d="M4 17h6l3-8 5 15 3-7h7" fill="none" stroke="var(--pos)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>SentimentPulse</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#overview">Overview</a>
+        <a href="#trends">Trends</a>
+        <a href="#detail">Inspector</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#lexicon">Lexicon</a>
+        <a href="#analyzer">Analyzer</a>
+        <a href="#method">Method</a>
+      </nav>
+      <span class="badge badge-synth" id="dataset-badge" hidden>Synthetic demo data</span>
+    </div>
+  </header>
+
+  <div class="notice" id="notice" role="note" hidden></div>
+  <div class="fatal" id="fatal" role="alert" hidden></div>
+
+  <main id="main">
+    <!-- ================= OVERVIEW ================= -->
+    <section id="overview" class="section">
+      <div class="section-head">
+        <h1>Customer sentiment overview</h1>
+        <p class="muted" id="overview-sub">Loading data&hellip;</p>
+      </div>
+      <div class="kpis" id="kpis">
+        <div class="kpi"><span class="kpi-label">Total reviews</span><span class="kpi-value" id="kpi-total">&ndash;</span><span class="kpi-sub" id="kpi-total-sub">&nbsp;</span></div>
+        <div class="kpi kpi-pos"><span class="kpi-label">Positive</span><span class="kpi-value" id="kpi-pos">&ndash;</span><span class="kpi-sub" id="kpi-pos-sub">&nbsp;</span></div>
+        <div class="kpi kpi-neg"><span class="kpi-label">Negative</span><span class="kpi-value" id="kpi-neg">&ndash;</span><span class="kpi-sub" id="kpi-neg-sub">&nbsp;</span></div>
+        <div class="kpi kpi-neu"><span class="kpi-label">Neutral</span><span class="kpi-value" id="kpi-neu">&ndash;</span><span class="kpi-sub" id="kpi-neu-sub">&nbsp;</span></div>
+        <div class="kpi"><span class="kpi-label">Average sentiment</span><span class="kpi-value" id="kpi-avg">&ndash;</span><span class="kpi-sub">Mean score across all reviews</span></div>
+        <div class="kpi kpi-flag"><span class="kpi-label">Negative outlier periods</span><span class="kpi-value" id="kpi-out">&ndash;</span><span class="kpi-sub" id="kpi-out-sub">&nbsp;</span></div>
+      </div>
+      <div class="card mix-card">
+        <div class="mix-head"><h2 class="card-title">Sentiment mix</h2><span class="muted small">Share of all reviews by classification</span></div>
+        <div class="mix-bar" id="mix-bar" role="img" aria-label="Sentiment mix"></div>
+        <div class="mix-legend" id="mix-legend"></div>
+      </div>
+    </section>
+
+    <!-- ================= TREND ================= -->
+    <section id="trends" class="section">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <h2 class="card-title">Sentiment trend</h2>
+            <p class="muted small" id="trend-sub">Average sentiment score per period</p>
+          </div>
+          <div class="seg" id="gran-toggle" role="group" aria-label="Time granularity">
+            <button type="button" data-gran="week" aria-pressed="true">Weekly</button>
+            <button type="button" data-gran="month" aria-pressed="false">Monthly</button>
+          </div>
+        </div>
+        <ul class="legend" aria-label="Chart legend">
+          <li><i class="lg lg-pos"></i>Positive average</li>
+          <li><i class="lg lg-neg"></i>Negative average</li>
+          <li><i class="lg lg-ring"></i>Flagged negative outlier</li>
+          <li><i class="lg lg-hollow"></i>Few reviews (below outlier minimum)</li>
+          <li><i class="lg lg-gap"></i>No reviews (gap, not zero)</li>
+        </ul>
+        <div class="chart-wrap" id="trend-chart"></div>
+        <p class="hint small">Hover a point for details. <strong>Click or press Enter on a point</strong> to inspect the reviews behind it.</p>
+        <div class="flagged" id="flagged"></div>
+      </div>
+    </section>
+
+    <!-- ================= PERIOD INSPECTOR ================= -->
+    <section id="detail" class="section">
+      <div class="section-head">
+        <h2>Period inspector</h2>
+        <p class="muted" id="detail-sub">Select a point on the trend chart to see its reviews and the complaint analysis.</p>
+      </div>
+      <div class="card empty-state" id="detail-empty">
+        <p>No period selected yet. Click a point on the chart above.</p>
+      </div>
+      <div id="detail-content" hidden>
+        <div class="detail-grid">
+          <article class="card" id="period-card" aria-live="polite"></article>
+          <article class="card" id="why-card"></article>
+        </div>
+        <article class="card" id="period-reviews"></article>
+      </div>
+    </section>
+
+    <!-- ================= REVIEW EXPLORER ================= -->
+    <section id="reviews" class="section">
+      <div class="section-head">
+        <h2>Review explorer</h2>
+        <p class="muted">Search and filter every review in the dataset. Click a row to inspect it.</p>
+      </div>
+      <div class="card">
+        <div class="filters">
+          <label class="field field-grow"><span>Search text</span>
+            <input type="search" id="ex-search" placeholder="e.g. refund, courier, app&hellip;" autocomplete="off"></label>
+          <label class="field"><span>Sentiment</span>
+            <select id="ex-sentiment"><option value="all">All</option><option value="positive">Positive</option><option value="neutral">Neutral</option><option value="negative">Negative</option></select></label>
+          <label class="field"><span>Complaint category</span>
+            <select id="ex-category"><option value="all">All</option></select></label>
+          <label class="field"><span>Period type</span>
+            <select id="ex-gran"><option value="all">All dates</option><option value="week">Week</option><option value="month">Month</option></select></label>
+          <label class="field"><span>Period</span>
+            <select id="ex-period" disabled><option value="all">All</option></select></label>
+          <label class="field"><span>Sort by</span>
+            <select id="ex-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="negative">Most negative first</option><option value="positive">Most positive first</option></select></label>
+          <button type="button" class="btn btn-ghost" id="ex-reset">Reset filters</button>
+        </div>
+        <p class="muted small" id="ex-count" aria-live="polite"></p>
+        <div class="table-wrap">
+          <table class="table" id="ex-table">
+            <thead><tr>
+              <th>Date</th><th>Review</th><th class="num">Score</th><th>Class</th><th>Positive words</th><th>Negative words</th><th>Complaint category</th>
+            </tr></thead>
+            <tbody id="ex-body"></tbody>
+          </table>
+        </div>
+        <div class="pager">
+          <button type="button" class="btn" id="ex-prev">&larr; Previous</button>
+          <span class="muted small" id="ex-page"></span>
+          <button type="button" class="btn" id="ex-next">Next &rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEXICON ================= -->
+    <section id="lexicon" class="section">
+      <div class="section-head">
+        <h2>Sentiment lexicon</h2>
+        <p class="muted">The exact words used for scoring. Score = positive matches &minus; negative matches.</p>
+      </div>
+      <div class="card">
+        <div class="callout" role="note">
+          <strong>Edits stay in this browser.</strong> They change the Live analyzer below, but they do <em>not</em> change the dashboard figures
+          or the Python backend. To apply a change to the real analysis, click <em>Export lexicon</em>, save the file as
+          <code>data/custom_lexicon.json</code> and re-run <code>python backend/main.py</code>.
+        </div>
+        <div class="lex-toolbar">
+          <span class="badge" id="lex-state">Default lexicon</span>
+          <span class="muted small" id="lex-version"></span>
+          <span class="spacer"></span>
+          <button type="button" class="btn" id="lex-export">Export lexicon (JSON)</button>
+          <button type="button" class="btn btn-ghost" id="lex-reset">Reset to default</button>
+        </div>
+        <p class="lex-msg" id="lex-msg" role="status" aria-live="polite"></p>
+        <div class="lex-grid">
+          <div class="lex-col lex-col-pos">
+            <h3>Positive words <span class="muted small" id="lex-pos-count"></span></h3>
+            <form class="lex-form" id="lex-pos-form"><input type="text" id="lex-pos-input" placeholder="Add a positive word" aria-label="Add a positive word" autocomplete="off" maxlength="30"><button type="submit" class="btn btn-pos">Add</button></form>
+            <div class="tags" id="lex-pos-tags"></div>
+          </div>
+          <div class="lex-col lex-col-neg">
+            <h3>Negative words <span class="muted small" id="lex-neg-count"></span></h3>
+            <form class="lex-form" id="lex-neg-form"><input type="text" id="lex-neg-input" placeholder="Add a negative word" aria-label="Add a negative word" autocomplete="off" maxlength="30"><button type="submit" class="btn btn-neg">Add</button></form>
+            <div class="tags" id="lex-neg-tags"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIVE ANALYZER ================= -->
+    <section id="analyzer" class="section">
+      <div class="section-head">
+        <h2>Live review analyzer</h2>
+        <p class="muted">Type any review. It is scored in your browser with the lexicon above; nothing is saved or sent anywhere.</p>
+      </div>
+      <div class="card">
+        <label class="field"><span>Review text</span>
+          <textarea id="an-text" rows="4" maxlength="2000" placeholder="The delivery was slow but the product was excellent."></textarea></label>
+        <div class="an-actions">
+          <button type="button" class="btn btn-primary" id="an-run">Analyze</button>
+          <button type="button" class="btn btn-ghost" id="an-clear">Clear</button>
+          <span class="muted small">Try:</span>
+          <button type="button" class="btn btn-chip" data-example="The delivery was slow but the product was excellent.">Mixed</button>
+          <button type="button" class="btn btn-chip" data-example="Excellent service, fast delivery and a perfect finish!">Positive</button>
+          <button type="button" class="btn btn-chip" data-example="Terrible support, the parcel arrived late and damaged.">Negative</button>
+          <button type="button" class="btn btn-chip" data-example="Not good at all.">Negation</button>
+        </div>
+        <div id="an-result" class="an-result" aria-live="polite"></div>
+        <p class="muted small" id="an-selfcheck"></p>
+      </div>
+    </section>
+
+    <!-- ================= METHODOLOGY ================= -->
+    <section id="method" class="section">
+      <div class="section-head">
+        <h2>Methodology and limitations</h2>
+        <p class="muted">How every number on this page is produced. No machine-learning model and no AI service is used.</p>
+      </div>
+      <div class="card method">
+        <details open>
+          <summary>1. Sentiment scoring (lexicon-based)</summary>
+          <p>Each review is lowercased and split into whole words. Every word found in the positive lexicon adds 1, every word in the negative lexicon subtracts 1:
+            <code>score = positive matches &minus; negative matches</code>. Score &gt; 0 is <em>positive</em>, &lt; 0 <em>negative</em>, = 0 <em>neutral</em>.
+            Matching is whole-word only (&ldquo;slowly&rdquo; does not match &ldquo;slow&rdquo;) and repeated words count each time.
+            This is a transparent word list, <strong>not</strong> a trained model. It does not understand negation (&ldquo;not good&rdquo; scores +1), sarcasm or intensity.
+            Lexicon fingerprint: <code data-fill="lexicon_version">&ndash;</code>.</p>
+        </details>
+        <details>
+          <summary>2. Weekly and monthly aggregation</summary>
+          <p>Weeks follow <span data-fill="week_definition">ISO 8601 (Monday start)</span>. A review belongs to the week and month of its own date.
+            A period&rsquo;s value is the mean score of its reviews. A period with no reviews is shown as a <em>gap</em>, never as zero.
+            Overall figures use all reviews directly (review-weighted); they are never an average of period averages.
+            Each period is compared with the nearest earlier period that has data.</p>
+        </details>
+        <details>
+          <summary>3. Negative outlier detection (z-score)</summary>
+          <p>Only periods with at least <b data-fill="min_reviews_week">8</b> reviews (weeks) or <b data-fill="min_reviews_month">20</b> reviews (months) are eligible,
+            and at least <b data-fill="min_periods">6</b> eligible periods are needed. The mean and standard deviation of eligible period averages form the baseline.
+            A period is flagged when <code>z = (average &minus; mean) / std</code> is at or below <b data-fill="z_threshold">&minus;1.5</b>;
+            it is labelled <em>severe</em> at z &le; &minus;2.0, otherwise <em>moderate</em>. Only unusually <em>low</em> sentiment is flagged.
+            A flagged period means &ldquo;unusually low compared with the rest of the data&rdquo;. It is <strong>not</strong> proof of an outage or of any cause.
+            Weakness: a very bad period also lifts the standard deviation, which can hide milder ones (&ldquo;masking&rdquo;).</p>
+        </details>
+        <details>
+          <summary>4. Complaint analysis and explanations</summary>
+          <p>Only negative reviews are analysed. Keyword groups assign each one to one or more categories (delivery, quality, support, pricing, website, returns);
+            a negative review with no keyword match goes to &ldquo;other&rdquo;. Each category counts <em>distinct reviews</em>, and its percentage is
+            reviews in the category &divide; negative reviews. With fewer than <b data-fill="min_negative">5</b> negative reviews the dashboard says the evidence is insufficient.
+            Categories named in the text must appear in at least <b data-fill="min_category">2</b> reviews (at most <b data-fill="max_categories">3</b> are named).
+            Explanations are filled-in templates; every number comes from the data. They describe what customers <em>reported</em>, an association, not a verified technical cause.</p>
+        </details>
+        <details>
+          <summary>5. Four ideas that are easy to mix up</summary>
+          <ul>
+            <li><b>Lexicon sentiment analysis</b>: counting known positive and negative words to score one review.</li>
+            <li><b>Statistical outlier detection</b>: asking whether a whole period&rsquo;s average is unusually low compared with the others.</li>
+            <li><b>Complaint categorisation</b>: sorting negative reviews into topics by keywords.</li>
+            <li><b>Evidence-based explanation</b>: a template that reports the category counts found, with caveats, and claims nothing beyond them.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>6. Known limitations</summary>
+          <ul>
+            <li>No negation, sarcasm, slang or multi-language support; a few synthetic demo reviews exist to show this.</li>
+            <li>Reviews scoring exactly 0 (including mixed ones) are neutral and are not part of the complaint analysis.</li>
+            <li>Keyword categories are simple and can miss unusual wording; unmatched complaints appear as &ldquo;other&rdquo;.</li>
+            <li>Weeks at the start or end of the data may be partial and therefore have few reviews.</li>
+            <li>The deployed site shows a snapshot: re-run the Python pipeline to refresh it.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <dialog id="review-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><h3 id="dialog-title">Review details</h3><button type="button" class="btn btn-ghost" id="dialog-close" aria-label="Close">Close</button></div>
+    <div id="dialog-body"></div>
+  </dialog>
+
+  <script src="js/vendor/d3.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/scoring.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/review_explorer.js"></script>
+  <script src="js/analyzer.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

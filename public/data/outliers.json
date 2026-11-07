@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "week": {
+    "status": "ok",
+    "reason": null,
+    "baseline": {
+      "mean": 0.616,
+      "std": 0.57,
+      "n_periods": 41
+    },
+    "flagged": [
+      {
+        "period_id": "2026-W20",
+        "avg_score": -0.893,
+        "review_count": 28,
+        "z": -2.65,
+        "deviation": -1.509,
+        "severity": "severe",
+        "why": "Average -0.89 is 2.6 standard deviations below the mean of 0.62 across 41 eligible weeks."
+      },
+      {
+        "period_id": "2026-W21",
+        "avg_score": -1.074,
+        "review_count": 27,
+        "z": -2.96,
+        "deviation": -1.69,
+        "severity": "severe",
+        "why": "Average -1.07 is 3.0 standard deviations below the mean of 0.62 across 41 eligible weeks."
+      },
+      {
+        "period_id": "2026-W22",
+        "avg_score": -0.519,
+        "review_count": 27,
+        "z": -1.99,
+        "deviation": -1.135,
+        "severity": "moderate",
+        "why": "Average -0.52 is 2.0 standard deviations below the mean of 0.62 across 41 eligible weeks."
+      }
+    ]
+  },
+  "month": {
+    "status": "ok",
+    "reason": null,
+    "baseline": {
+      "mean": 0.614,
+      "std": 0.446,
+      "n_periods": 10
+    },
+    "flagged": [
+      {
+        "period_id": "2026-05",
+        "avg_score": -0.482,
+        "review_count": 112,
+        "z": -2.45,
+        "deviation": -1.095,
+        "severity": "severe",
+        "why": "Average -0.48 is 2.5 standard deviations below the mean of 0.61 across 10 eligible months."
+      }
+    ]
+  }
+}

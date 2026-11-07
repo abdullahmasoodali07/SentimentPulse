@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "total_reviews": 883,
+  "positive": {
+    "count": 426,
+    "pct": 48.2
+  },
+  "negative": {
+    "count": 196,
+    "pct": 22.2
+  },
+  "neutral": {
+    "count": 261,
+    "pct": 29.6
+  },
+  "avg_score": 0.578,
+  "outlier_periods": {
+    "week": 3,
+    "month": 1
+  }
+}

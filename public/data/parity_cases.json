@@ -1,0 +1,317 @@
+{
+ "schema_version": 1,
+ "description": "Hand-written expected results shared by the Python tests, the Node tests and the in-browser self-check. Uses the DEFAULT lexicon.",
+ "cases": [
+  {
+   "text": "The delivery was slow but the product was excellent.",
+   "score": 0,
+   "pos": [
+    "excellent"
+   ],
+   "neg": [
+    "slow"
+   ],
+   "cls": "neutral",
+   "note": "spec example: mixed review"
+  },
+  {
+   "text": "Great product, fast shipping, perfect packaging!",
+   "score": 3,
+   "pos": [
+    "great",
+    "fast",
+    "perfect"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "positive"
+  },
+  {
+   "text": "Terrible quality and awful support.",
+   "score": -2,
+   "pos": [],
+   "neg": [
+    "terrible",
+    "awful"
+   ],
+   "cls": "negative",
+   "note": "negative"
+  },
+  {
+   "text": "",
+   "score": 0,
+   "pos": [],
+   "neg": [],
+   "cls": "neutral",
+   "note": "empty text"
+  },
+  {
+   "text": "   ",
+   "score": 0,
+   "pos": [],
+   "neg": [],
+   "cls": "neutral",
+   "note": "whitespace only"
+  },
+  {
+   "text": "I ordered a blue jacket on Monday.",
+   "score": 0,
+   "pos": [],
+   "neg": [],
+   "cls": "neutral",
+   "note": "neutral, no lexicon words"
+  },
+  {
+   "text": "GREAT Great great",
+   "score": 3,
+   "pos": [
+    "great",
+    "great",
+    "great"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "case-insensitive, repeats counted"
+  },
+  {
+   "text": "The greatest product ever",
+   "score": 0,
+   "pos": [],
+   "neg": [],
+   "cls": "neutral",
+   "note": "word boundary: greatest is not great"
+  },
+  {
+   "text": "Slowly but surely",
+   "score": 0,
+   "pos": [],
+   "neg": [],
+   "cls": "neutral",
+   "note": "word boundary: slowly is not slow"
+  },
+  {
+   "text": "It's not good",
+   "score": 1,
+   "pos": [
+    "good"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "known limit: negation is not handled"
+  },
+  {
+   "text": "This is a non-slow, super-fast service.",
+   "score": 0,
+   "pos": [
+    "fast"
+   ],
+   "neg": [
+    "slow"
+   ],
+   "cls": "neutral",
+   "note": "hyphen splits words"
+  },
+  {
+   "text": "Don't buy. Awful, awful, awful.",
+   "score": -3,
+   "pos": [],
+   "neg": [
+    "awful",
+    "awful",
+    "awful"
+   ],
+   "cls": "negative",
+   "note": "apostrophe token plus repeats"
+  },
+  {
+   "text": "Love it!!! 😀 Amazing…",
+   "score": 2,
+   "pos": [
+    "love",
+    "amazing"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "emoji and ellipsis ignored"
+  },
+  {
+   "text": "Café service was excellent",
+   "score": 1,
+   "pos": [
+    "excellent"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "non-ASCII letter splits the token"
+  },
+  {
+   "text": "The product wasn’t broken",
+   "score": -1,
+   "pos": [],
+   "neg": [
+    "broken"
+   ],
+   "cls": "negative",
+   "note": "curly apostrophe"
+  },
+  {
+   "text": "Delayed again, so frustrating. Never ordering again.",
+   "score": -2,
+   "pos": [],
+   "neg": [
+    "delayed",
+    "frustrating"
+   ],
+   "cls": "negative",
+   "note": "negative"
+  },
+  {
+   "text": "Helpful staff and a smooth checkout, but the app is buggy and slow.",
+   "score": 0,
+   "pos": [
+    "helpful",
+    "smooth"
+   ],
+   "neg": [
+    "buggy",
+    "slow"
+   ],
+   "cls": "neutral",
+   "note": "mixed, order of appearance"
+  },
+  {
+   "text": "Best purchase ever. Quick delivery, friendly team.",
+   "score": 3,
+   "pos": [
+    "best",
+    "quick",
+    "friendly"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "positive"
+  },
+  {
+   "text": "UNACCEPTABLE!!!",
+   "score": -1,
+   "pos": [],
+   "neg": [
+    "unacceptable"
+   ],
+   "cls": "negative",
+   "note": "uppercase"
+  },
+  {
+   "text": "12345 !!! ???",
+   "score": 0,
+   "pos": [],
+   "neg": [],
+   "cls": "neutral",
+   "note": "digits and punctuation only"
+  },
+  {
+   "text": "Poor poor poor, terrible, horrible, worst",
+   "score": -6,
+   "pos": [],
+   "neg": [
+    "poor",
+    "poor",
+    "poor",
+    "terrible",
+    "horrible",
+    "worst"
+   ],
+   "cls": "negative",
+   "note": "strongly negative"
+  },
+  {
+   "text": "I do not love it and I am not happy",
+   "score": 2,
+   "pos": [
+    "love",
+    "happy"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "known limit: negation is not handled"
+  },
+  {
+   "text": "Love/hate relationship",
+   "score": 0,
+   "pos": [
+    "love"
+   ],
+   "neg": [
+    "hate"
+   ],
+   "cls": "neutral",
+   "note": "slash splits words"
+  },
+  {
+   "text": "wow—amazing",
+   "score": 1,
+   "pos": [
+    "amazing"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "em dash splits words"
+  },
+  {
+   "text": "Slow.Slow;slow",
+   "score": -3,
+   "pos": [],
+   "neg": [
+    "slow",
+    "slow",
+    "slow"
+   ],
+   "cls": "negative",
+   "note": "punctuation separators"
+  },
+  {
+   "text": "It's great",
+   "score": 1,
+   "pos": [
+    "great"
+   ],
+   "neg": [],
+   "cls": "positive",
+   "note": "contraction token it's"
+  },
+  {
+   "text": "the app crashes",
+   "score": -1,
+   "pos": [],
+   "neg": [
+    "crashes"
+   ],
+   "cls": "negative",
+   "note": "negative"
+  },
+  {
+   "text": "Not great, not terrible.",
+   "score": 0,
+   "pos": [
+    "great"
+   ],
+   "neg": [
+    "terrible"
+   ],
+   "cls": "neutral",
+   "note": "known limit: negation is not handled"
+  },
+  {
+   "text": "Good, bad, and ugly",
+   "score": 0,
+   "pos": [
+    "good"
+   ],
+   "neg": [
+    "bad"
+   ],
+   "cls": "neutral",
+   "note": "ugly is not in the lexicon"
+  }
+ ]
+}
