@@ -1,5 +1,8 @@
 # SentimentPulse
 
+**Live Demo:** [Open SentimentPulse](https://sentiment-pulse-peach.vercel.app/)
+
+Customer review sentiment analytics and trend detection.
 A customer-sentiment analytics dashboard built as a college engineering project.
 It reads customer reviews from a **SQLite** database, scores them with a transparent
 **word list (lexicon)**, finds **unusually negative weeks/months** with simple statistics,
